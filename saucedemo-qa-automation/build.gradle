@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.arica.qa'
+version = '1.0-SNAPSHOT'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Selenium
+    implementation 'org.seleniumhq.selenium:selenium-java:4.13.0'
+
+    // JUnit 5 (Jupiter)
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
+
+    // Suporte para Suites
+    testImplementation 'org.junit.platform:junit-platform-suite:1.10.0'
+
+    // ExtentReports
+    implementation 'com.aventstack:extentreports:5.0.9'
+
+    // WebDriverManager
+    implementation 'io.github.bonigarcia:webdrivermanager:5.5.3'
+}
+
+test {
+    useJUnitPlatform()
+}
