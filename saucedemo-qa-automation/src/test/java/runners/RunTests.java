@@ -11,6 +11,5 @@ import tests.ProductTest;
         ProductTest.class
 })
 public class RunTests {
-    // Esta classe fica vazia.
-    // Ela serve apenas como configuração para o JUnit rodar os testes selecionados.
+
 }

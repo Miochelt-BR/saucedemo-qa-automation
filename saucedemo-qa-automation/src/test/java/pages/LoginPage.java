@@ -12,7 +12,7 @@ public class LoginPage {
     private WebDriver driver;
     private WebDriverWait wait;
 
-    // 🎯 Seletores (Locators)
+
     private By usernameInput = By.id("user-name");
     private By passwordInput = By.id("password");
     private By loginButton = By.id("login-button");
@@ -20,7 +20,7 @@ public class LoginPage {
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
-        // ⏱️ Definimos a espera aqui no construtor
+
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
@@ -36,7 +36,7 @@ public class LoginPage {
 
     public String getErrorMessage() {
         try {
-            // 🔍 Aqui é onde seu teste antigo falhava. Agora ele vai esperar até 10s o erro aparecer!
+
             return wait.until(ExpectedConditions.visibilityOfElementLocated(errorMessage)).getText();
         } catch (Exception e) {
             return "";

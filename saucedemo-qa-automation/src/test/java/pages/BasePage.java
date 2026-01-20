@@ -10,7 +10,7 @@ public class BasePage {
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
-        // ⏱️ O wait centralizado aqui evita que você tenha que criar um em cada página
+
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 }

@@ -22,7 +22,7 @@ public class BaseTest {
         if (ExtentManager.getInstance() != null) {
             ExtentManager.getInstance().flush();
         }
-        // 🚪 Fecha o navegador sempre para garantir um ambiente limpo
+
         DriverFactory.quitDriver();
     }
 

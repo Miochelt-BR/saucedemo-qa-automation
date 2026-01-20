@@ -12,13 +12,13 @@ public class ExtentManager {
 
     public static ExtentReports getInstance() {
         if (extent == null) {
-            // 1. Definimos o formato (Ex: Dia_Mes_Ano_Hora_Minuto)
+
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd_MM_yyyy_HH_mm_ss");
 
-            // 2. Pegamos a data atual e formatamos
+
             String timestamp = LocalDateTime.now().format(formatter);
 
-            // 3. Criamos o caminho do arquivo com o timestamp
+
             String path = "test-output/Relatorio_" + timestamp + ".html";
 
             ExtentSparkReporter spark = new ExtentSparkReporter(path);
