@@ -54,7 +54,15 @@ nbdist/
 # Mac OS
 # ========================
 .DS_Store
-
+# ========================
+# Relatórios de Testes (ExtentReports / JUnit)
+# ========================
+test-output/
+target/
+build/reports/
+test-reports/
+*.html
+screenshot/*.png
 # ========================
 # Logs, temporários e cache
 # ========================
