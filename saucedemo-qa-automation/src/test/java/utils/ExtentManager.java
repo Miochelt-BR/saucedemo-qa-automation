@@ -15,9 +15,7 @@ public class ExtentManager {
 
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd_MM_yyyy_HH_mm_ss");
 
-
             String timestamp = LocalDateTime.now().format(formatter);
-
 
             String path = "test-output/Relatorio_" + timestamp + ".html";
 

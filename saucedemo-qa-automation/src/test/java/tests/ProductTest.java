@@ -22,7 +22,7 @@ public class ProductTest extends BaseTest {
     @Test
     @Order(10)
     void PR_010_visualizar_lista() {
-        iniciarTeste("PR-010 | Visualizar Lista | ALTA");
+        startTest("PR-010 | Visualizar Lista | ALTA");
         loginPage.login(Users.getUsername(Users.UserType.STANDARD), Users.PASSWORD);
 
         assertTrue(inventoryPage.obterQuantidadeProdutos() > 0);
@@ -32,7 +32,7 @@ public class ProductTest extends BaseTest {
     @Test
     @Order(11)
     void PR_011_ordenar_por_preco() {
-        iniciarTeste("PR-011 | Ordenar Preço | ALTA");
+        startTest("PR-011 | Ordenar Preço | ALTA");
         loginPage.login(Users.getUsername(Users.UserType.STANDARD), Users.PASSWORD);
 
         inventoryPage.selecionarOrdenacao("Price (low to high)");
@@ -43,7 +43,7 @@ public class ProductTest extends BaseTest {
     @Test
     @Order(12)
     void PR_012_ordenar_por_nome() {
-        iniciarTeste("PR-012 | Ordenar Nome | ALTA");
+        startTest("PR-012 | Ordenar Nome | ALTA");
         loginPage.login(Users.getUsername(Users.UserType.STANDARD), Users.PASSWORD);
 
         inventoryPage.selecionarOrdenacao("Name (A to Z)");
@@ -54,7 +54,7 @@ public class ProductTest extends BaseTest {
     @Test
     @Order(13)
     void PR_013_imagem_quebrada() {
-        iniciarTeste("PR-013 | Imagem Quebrada | ALTA");
+        startTest("PR-013 | Imagem Quebrada | ALTA");
         loginPage.login("problem_user", Users.PASSWORD);
 
         // Verificação das imagens
@@ -76,7 +76,7 @@ public class ProductTest extends BaseTest {
     @Test
     @Order(14)
     void PR_014_verificar_lentidao() {
-        iniciarTeste("PR-014 | Lentidão | ALTA");
+        startTest("PR-014 | Lentidão | ALTA");
         long inicio = System.currentTimeMillis();
 
         loginPage.login("performance_glitch_user", Users.PASSWORD);

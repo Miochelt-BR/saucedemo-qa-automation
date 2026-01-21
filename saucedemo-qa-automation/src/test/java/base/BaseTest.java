@@ -26,10 +26,9 @@ public class BaseTest {
         DriverFactory.quitDriver();
     }
 
+
     protected void startTest(String testName) {
         test = ExtentManager.getInstance().createTest(testName);
     }
-    protected void iniciarTeste(String nomeTeste) {
-        test = ExtentManager.getInstance().createTest(nomeTeste);
-    }
+
 }

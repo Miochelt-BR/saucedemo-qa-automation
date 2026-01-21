@@ -58,7 +58,6 @@ public class ProductPage extends BasePage {
     public boolean verificarImagensEstaoCorretas() {
         List<WebElement> imagens = driver.findElements(imagensProdutos);
         for (WebElement img : imagens) {
-            // Se o SRC contém sl-404, a imagem está tecnicamente "quebrada"
             if (img.getAttribute("src").contains("sl-404")) {
                 return false;
             }
