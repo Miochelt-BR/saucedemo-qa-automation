@@ -26,7 +26,8 @@ public class LoginPage {
 
     public void login(String username, String password) {
 
-        WebElement userField = wait.until(ExpectedConditions.visibilityOfElementLocated(usernameInput));
+        WebElement userField = wait.until(ExpectedConditions.
+                visibilityOfElementLocated(usernameInput));
         userField.clear();
         userField.sendKeys(username);
 
@@ -39,7 +40,7 @@ public class LoginPage {
 
             return wait.until(ExpectedConditions.visibilityOfElementLocated(errorMessage)).getText();
         } catch (Exception e) {
-            return "";
+            return null;
         }
     }
 }

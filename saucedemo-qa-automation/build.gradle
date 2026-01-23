@@ -29,6 +29,9 @@ dependencies {
 
     // WebDriverManager
     implementation 'io.github.bonigarcia:webdrivermanager:5.5.3'
+
+    // Silenciador de logs SLF4J
+    testImplementation 'org.slf4j:slf4j-nop:2.0.9'
 }
 
 test {

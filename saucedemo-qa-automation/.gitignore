@@ -4,68 +4,36 @@
 .gradle/
 build/
 !gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
 .kotlin/
 
 # ========================
 # IntelliJ IDEA
 # ========================
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
+.idea/
 *.iws
 *.iml
 *.ipr
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
 
 # ========================
-# Eclipse
+# Relatórios de Testes (Core & Reports)
 # ========================
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings/
-.springBeans
-.sts4-cache/
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
-
-# ========================
-# NetBeans
-# ========================
-/nbproject/private/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
-
-# ========================
-# VS Code
-# ========================
-.vscode/
-
-# ========================
-# Mac OS
-# ========================
-.DS_Store
-# ========================
-# Relatórios de Testes (ExtentReports / JUnit)
-# ========================
+# Ignora qualquer arquivo HTML (ExtentReports)
+*.html
+# Ignora especificamente seus relatórios datados
+Relatorio_*.html
+# Pastas de saída comuns
 test-output/
 target/
 build/reports/
 test-reports/
-*.html
-screenshot/*.png
+# Screenshots de erro
+screenshot/
+*.png
+
 # ========================
-# Logs, temporários e cache
+# Sistema e Logs
 # ========================
+.DS_Store
 *.log
 *.tmp
-*.bak
